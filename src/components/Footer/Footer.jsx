@@ -1,13 +1,14 @@
 import { useState } from 'react';
+import './Footer.module.css';
 
 const Footer = () => {
 	const [inputValue, setInputValue] = useState('')
 
-	function handleInput(e) {
+	const handleInput = (e) => {
 		setInputValue(e.target.value)
 	}
 
-	function leBlur() {
+	const leBlur = () => {
 		if (!inputValue.includes('@')) {
 			alert("Attention, il n'y a pas d'@, ceci n'est pas une adresse valide 😥")
 		}

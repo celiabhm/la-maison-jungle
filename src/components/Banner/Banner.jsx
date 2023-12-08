@@ -1,6 +1,7 @@
 import Description from "../Description/Description";
 import Header from "../Header/Header";
 import logo from '../../assets/logo.png';
+import './Banner.module.css';
 
 const Banner = () => {
     return (<div>
@@ -8,7 +9,7 @@ const Banner = () => {
         <div className='title'>
             <img src={logo}alt='La maison jungle' className='logo' />
         </div>
-        <Description />
+        <Description/>
     </div>)
 }
 
